@@ -1,0 +1,233 @@
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.auth-form {
+  background: rgba(0, 0, 0, 1); 
+  color: #fff;
+  border-radius: 16px;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  box-shadow: 10px 0 15px rgba(0, 0, 0, 0.4); 
+  width: 100%;
+}
+
+.auth-form h2 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.auth-form h2 strong {
+  color: #fffb00; 
+  font-weight: bold;
+  font-size: 1.2em; 
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+}
+
+.auth-form label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fffb00; /* Dourado para destaque */
+  margin-bottom: 8px;
+  display: block;
+  letter-spacing: 0.5px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Efeito de profundidade */
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.auth-form label:hover {
+  color: #ffbb00; /* Dourado mais claro no hover */
+  transform: scale(1.02); /* Leve aumento ao interagir */
+}
+
+.auth-form input {
+  margin-top: 4px; /* Espaço entre o label e o campo de entrada */
+}
+
+.auth-form input {
+  padding: 14px 18px;
+  font-size: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 48px;
+  transition: all 0.3s ease;
+}
+
+.auth-form p {
+  margin-bottom: 30px; 
+  text-align: center;
+  color: #fff;
+}
+
+.auth-form input:focus {
+  outline: none;
+  border: 1px solid #fffb00;
+  box-shadow: 0 0 10px rgba(255, 251, 0, 0.6);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.auth-form input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  font-style: italic;
+  opacity: 1;
+}
+
+.auth-form select {
+  padding: 12px 18px;
+  font-size: 16px;
+  border-radius: 8px;
+  color: #fff;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 48px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  background-color: #454444;
+}
+
+.auth-form select:focus {
+  outline: none;
+  border-color: #fffb00;  /* Mantém a borda dourada no foco */
+  box-shadow: 0 0 8px rgba(255, 251, 0, 0.6);
+}
+
+.auth-form select::after {
+  content: '▼';  /* Simulando a seta */
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #fffb00;
+  pointer-events: none;
+}
+
+.auth-form select option {
+  background-color: #333; /* Fundo das opções */
+  color: #fff;
+  padding: 10px;
+  border: none;
+}
+
+.auth-form select option:hover {
+  background-color: #555; /* Fundo das opções ao passar o mouse */
+}
+
+
+.password-container {
+  position: relative;
+  width: 100%;
+}
+
+.password-container input {
+  padding-right: 40px;
+  height: 45px; 
+  font-size: 16px;
+  display: flex; 
+  align-items: center; 
+}
+
+.password-container .toggle-password {
+  position: absolute;
+  top: 55%;
+  right: 10px; 
+  transform: translateY(-50%); 
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+}
+
+.auth-form button {
+  padding: 14px 18px;
+  font-size: 18px;
+  font-weight: bold;
+  background: #000000; 
+  color: #fff;
+  border: 1px solid #fffb00; 
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+}
+
+.auth-form button:hover {
+  background: #454444; 
+  transform: scale(1.02); 
+  box-shadow: 0 4px 15px rgba(255, 251, 0, 0.4);
+}
+
+.auth-form button:active {
+  background: #000000; 
+  transform: scale(0.98); 
+}
+
+.auth-links {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.auth-links a {
+  color: #fffb00;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.auth-links a:hover {
+  color: #ffbb00;
+}
+
+.forgot-password-link {
+  color: rgb(0, 0, 255);
+  text-decoration: none;
+}
+
+.forgot-password-link:hover {
+  color: rgb(0, 0, 255);
+}
+
+.auth-form p {
+  margin-bottom: 30px; 
+  text-align: center;
+  color: #fff;
+}
+
+.auth-form .redirect-link {
+  margin-top: 15px; /* Espaçamento entre o botão e o link */
+  text-align: center;
+}
+
+.auth-form .redirect-link span {
+  color: #fffb00;
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: bold;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+.auth-form .redirect-link span:hover {
+  color: #ffbb00; /* Mudança de cor no hover */
+  text-decoration: none; /* Remove o sublinhado no hover */
+}

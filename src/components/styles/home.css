@@ -1,0 +1,118 @@
+/* home.css */
+.home {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  /* Sidebar Styles */
+  .sidebar {
+    width: 250px;
+    background-color: #2f3542;
+    color: white;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    padding-top: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .sidebar .toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  
+  .sidebar .logo h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .sidebar .sidebar-content {
+    margin-top: 30px;
+    padding-left: 20px;
+  }
+  
+  .sidebar .sidebar-content p.welcome-msg {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #fff;
+  }
+  
+  .sidebar .sidebar-content a {
+    display: block;
+    margin: 15px 0;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .sidebar .sidebar-content a:hover {
+    color: #f1c40f;
+  }
+  
+  /* Dashboard Styles */
+  .dashboard {
+    margin-left: 250px; /* Para começar ao lado do Sidebar */
+    padding: 20px;
+    width: calc(100% - 250px); /* O dashboard ocupa o restante da tela */
+    background-color: #fff;
+  }
+  
+  .dashboard-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-header h1 {
+    color: #333;
+  }
+  
+  .dashboard-header p {
+    color: #666;
+    font-size: 18px;
+  }
+  
+  .dashboard-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .summary-card,
+  .low-stock-card,
+  .top-sellers-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .summary-card h2,
+  .low-stock-card h2,
+  .top-sellers-card h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .low-stock-card {
+    background-color: #ffebeb;
+  }
+  
+  .top-sellers-card {
+    background-color: #eaf7e8;
+  }
+  
